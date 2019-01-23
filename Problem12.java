@@ -6,20 +6,22 @@ public class Problem12 {
 		// // power of 5
 		Scanner sc = new Scanner(System.in);
 		int n= sc.nextInt();
-		while(n>=4) {
-			if(n>5 && n<10 ) {
-				System.out.println("False");
-				System.exit(0);
+		Scanner sc = new Scanner(System.in);
+			int n= sc.nextInt();
+			while(n>=5) {
+				if(n%5==0) {
+					n/=5;
+				}
+				else {
+					break;
+				}
 			}
-			
-			n=n/5;
-		}
-		if(n==1) {
-			System.out.println("True");
-		}
-		else
-			System.out.println("False");
-
+			if(n==1) {
+				System.out.println("True");
+			}
+			else{
+				System.out.println("False");
+			}
 
 	}
 
